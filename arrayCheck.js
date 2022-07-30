@@ -1,5 +1,5 @@
 const isArray = input =>{
-    if (toString.call(input) === "[object Array]")
+    if (toString.call(input) === "[object Array]") // comparing input  === array or object
         return true;
     return false;   
 }
