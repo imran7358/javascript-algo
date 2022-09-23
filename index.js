@@ -1,11 +1,12 @@
-var arr = 12345;
-var newArr = []
-function convertIn(num){
-  return Number(num)
+function checkPalindrom(str) {
+
+  for (var i = 0; i < str.length / 2; i++) {
+      if (str[i] !== str[str.length - 1 - i]) {
+          return 'Not a Plaindrom'
+      }
+
+      else return 'Palindrom'
+  }
+
 }
-let myFunc = num => Number(num);
-var intArr = Array.from(String(arr), convertIn);
-for(var i = intArr.length - 1 ; i>=0;  i--){
- newArr.push(intArr[i])
-}
-console.log(newArr)
+console.log(checkPalindrom('madam'))
