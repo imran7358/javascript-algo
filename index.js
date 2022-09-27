@@ -1,15 +1,11 @@
-function addTraget(arr, target){
+var arr = 12345;
+var rev = 0;
+var lastdigit;
+ 
+while(arr !== 0){
 
-  for(var i = 0; i<arr.length; i++){
-
-    for( j = i + 1; j< arr.length; j++){
-
-      if(arr[i] + arr[j] == target){
-
-        return [i,j]
-      }
-    }
-  }
+  lastdigit = arr % 10;
+  rev = rev * 10 + lastdigit;
+  arr = Math.floor(arr / 10);
 }
-
-console.log(addTraget([1,2,3,4,5],6))
+console.log(rev)
