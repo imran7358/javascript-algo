@@ -1,9 +1,3 @@
-const arr = [1,1,2,3,2,4];
-const t =[]
-const sort = arr.map((n,i)=>{
-  if(t.indexOf(n) == -1){
-    t.push(n)
-  }
-})
+const arr = [1, 1, 2, 3, 2, 4];
 
-console.log(t)
+console.log([...new Set(arr)]);
